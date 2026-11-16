@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-body, * {
+body,
+* {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
@@ -40,7 +41,8 @@ h1 {
     box-shadow: 3px 2px 6px lightgrey;
 }
 
-label, input {
+label,
+input {
     margin-top: 5px;
     display: block;
     font-size: inherit;
@@ -55,4 +57,40 @@ input[type="submit"] {
     border: none;
     padding: .375rem 1rem;
     margin-top: 10px;
+}
+
+/* Custom Styles */
+
+a {
+    display: inline-block;
+    margin: 0 1rem 1.5rem 1rem;
+}
+
+table {
+    width: calc(100% - 2rem);
+    max-width: 800px;
+    margin: 0 1rem 2rem 1rem;
+    border-collapse: collapse;
+    border: 1px solid #d9e2ec;
+}
+
+thead th {
+    background-color: #d9eaf7;
+    color: #102a43;
+    text-align: left;
+    padding: 12px 16px;
+    border-bottom: 2px solid #bcccdc;
+}
+
+tbody td {
+    padding: 12px 16px;
+    border-bottom: 1px solid #e1e5eb;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f4f6f8;
 }
