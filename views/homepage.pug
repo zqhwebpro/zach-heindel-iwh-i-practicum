@@ -1,0 +1,21 @@
+doctype html
+html 
+    head 
+        title= `${title}`
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        link(rel="stylesheet", href="/css/style.css")
+    body    
+        h1 Custom Object Table
+        a(href="/update-cobj") Add to this table
+        table
+            thead
+                tr
+                    th Name
+                    th Phone
+                    th Age
+            tbody
+                each record in data
+                    tr
+                        td #{record.properties.name}
+                        td #{record.properties.phone}
+                        td #{record.properties.age}
